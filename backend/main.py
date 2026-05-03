@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import os
 from database import engine, Base
-from models import Base
+import models  # ensure model classes are registered with SQLAlchemy metadata
 from routers import auth_router, resume, careers, gaps, quiz, interview
 from fastapi.security import HTTPBearer
 
