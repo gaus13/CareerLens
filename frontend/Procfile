@@ -1,0 +1,1 @@
+web: sh -c "npm ci && npm run build && npx serve -s build -l ${PORT:-5000}"
